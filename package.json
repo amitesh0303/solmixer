@@ -1,0 +1,20 @@
+{
+  "name": "solmixer",
+  "version": "1.0.0",
+  "description": "Privacy protocol for Solana using ZK proofs",
+  "private": true,
+  "scripts": {
+    "build:relayer": "cd relayer && npm run build",
+    "test:relayer": "cd relayer && npm test",
+    "build:frontend": "cd frontend && npm run build",
+    "test:frontend": "cd frontend && npm test",
+    "dev:relayer": "cd relayer && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "anchor:build": "anchor build",
+    "anchor:test": "anchor test"
+  },
+  "workspaces": [
+    "relayer",
+    "frontend"
+  ]
+}
